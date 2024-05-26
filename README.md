@@ -1,16 +1,16 @@
 # Trabajo_UD7
 1. Realiza los siguientes apartados relativos a Copia de Seguridad en Windows,
 documentando los apartados d y f:
- ** a**. En un Windows 11 Pro instala el software “Paragon Backup & Recovery
+ **a**. En un Windows 11 Pro instala el software “Paragon Backup & Recovery
 Community Edition”.
- ** b**. Dedica unos minutos a familiarizarte con su interfaz e identifica cómo
+ **b**. Dedica unos minutos a familiarizarte con su interfaz e identifica cómo
 puedes: crear diferentes tipos de copias de seguridad (completa,
 incremental y diferencial), cómo programar la ejecución de las copias,
 cómo establecer copia de seguridad para todo el sistema, cómo
 establecer copia de seguridad para un conjunto de ficheros y directorios
 concreto, cómo puedes restaurar los datos que contiene una copia de
 seguridad, etc.
- ** c**. Crea la siguiente estructura de ficheros y directorios en
+ **c**. Crea la siguiente estructura de ficheros y directorios en
 C:\Users\tuUsuario\Documents\:
 - [d] DatosBackup
 - [d] Logs
@@ -21,7 +21,7 @@ C:\Users\tuUsuario\Documents\:
 - [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
- ** d**. Diseña y configura en “Paragon Backup & Recovery Community Edition” una
+ **d**. Diseña y configura en “Paragon Backup & Recovery Community Edition” una
 política de backup que te permita mantener copia de seguridad diaria
 de todo el contenido del directorio “DatosBackup”, teniendo en cuenta
 las recomendaciones estudiadas en clase (optimizar el espacio dedicado
@@ -29,7 +29,7 @@ a copias y reducir el tiempo entre copias). Habrá que programar la
 ejecución de diferentes tipos de copia de seguridad. Indica de forma
 esquemática o empleando una tabla la política de backup que has
 diseñado. Justifica el por qué de cada copia y su frecuencia.
- ** e**. Simula los siguientes escenarios:
+ **e**. Simula los siguientes escenarios:
 i. El lunes se modificaron erróneamente fichero1.txt y fichero2.txt y
 se crearon los ficheros fichero3.txt y fichero4.txt
 ii. El martes se creó el fichero5.txt
