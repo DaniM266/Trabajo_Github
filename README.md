@@ -51,11 +51,11 @@ Haremos la política de backup centrada en un usuario normal de un ordenador, qu
 
 Realizaremos copias 3 dias a la semana  ya que es lo mas optimo para un usuario normal
 
-| Dia | Tipo de Backup | Justificación |
+| Frecuencia | Tipo de Backup | Justificación |
 |---|---|---|
-| Martes| Incremental | Realizamos una copia desde la última copia incremental. |
-| Viernes | Diferencial | Copia los cambios realizados desde la última copia completa, con esto buscamos que una vez a la semana se guarden los cambios sobre la copia completa minimizando los errores o pérdidas de los archivos originales |
-| Domingo| Incremental | Volvemos a realizar otra incremental para así poder aumentar la rapidez y minimizar el espacio empleado |
+| Cada 2 días| Incremental | Realizamos una copia desde la última copia incremental. |
+| Cada 4 días | Diferencial | Copia los cambios realizados desde la última copia completa, con esto buscamos que una vez a la semana se guarden los cambios sobre la copia completa minimizando los errores o pérdidas de los archivos originales |
+| Cada 7 dias| Total | Hacemos una copia total sobreescribiendo todos los datos nuevos |
 
 Una vez cada dos semanas, la copia incremental de los domingos la cambiaremos por una copia completa, ya que para un usuario normal de un ordenador creemos que es lo más eficiente para minimizar los errores de modificación de archivos y como consecuencia la pérdida de los archivos originales.
 
