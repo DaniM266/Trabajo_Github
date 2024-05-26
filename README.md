@@ -11,6 +11,7 @@ cómo establecer copia de seguridad para todo el sistema, cómo
 establecer copia de seguridad para un conjunto de ficheros y directorios
 concreto, cómo puedes restaurar los datos que contiene una copia de
 seguridad, etc.
+<br>
  **c**. Crea la siguiente estructura de ficheros y directorios en
 C:\Users\tuUsuario\Documents\:
 - [d] DatosBackup
@@ -22,6 +23,7 @@ C:\Users\tuUsuario\Documents\:
 - [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
+- <br>
  **d**. Diseña y configura en “Paragon Backup & Recovery Community Edition” una
 política de backup que te permita mantener copia de seguridad diaria
 de todo el contenido del directorio “DatosBackup”, teniendo en cuenta
@@ -30,6 +32,7 @@ a copias y reducir el tiempo entre copias). Habrá que programar la
 ejecución de diferentes tipos de copia de seguridad. Indica de forma
 esquemática o empleando una tabla la política de backup que has
 diseñado. Justifica el por qué de cada copia y su frecuencia.
+<br>
  **e**. Simula los siguientes escenarios:
 i. El lunes se modificaron erróneamente fichero1.txt y fichero2.txt y
 se crearon los ficheros fichero3.txt y fichero4.txt
@@ -38,6 +41,7 @@ iii. El miércoles se borro erróneamente fichero1.pdf y se crearon los
 ficheros otroFichero3.jpeg y otroFichero4.jpeg
 iv. El jueves se borró erróneamente otroFichero1.jpg y se crearon los
 ficheros ficheroLog3.txt y ficheroLog4.txt (directorio Logs)
+<br>
 **f.** Realiza y documenta el proceso de restauración que llevarías a cabo el
 viernes tras caer en la cuenta de los errores generados durante la
 semana, simulados anteriormente. El proceso debe permitir recuperar
@@ -45,18 +49,24 @@ con éxito todos los ficheros modificados/borrados erróneamente.
 (NOTA: En lugar de utilizar días de la semana reales, realiza las modificaciones
 necesarias para cumplir cada escenario y lanza manualmente la copia de
 seguridad que proceda en cada caso).
-
+<br>
 **2**. Realiza los siguientes apartados relativos a Sistemas RAID en Windows,
 documentando los apartados b, c, d, e y f:
+<br>
 **a**. En una máquina virtual que tenga instalado Windows 11 Education Pro,
 crea dos nuevos discos virtuales de 10 GB cada uno. Una vez arrancado
 Windows, utilizando la herramienta “Administración de discos”, inicializa
 cada uno de los dos discos como “Disco Dinámico” y realiza lo siguiente:
+<br>
 **b**. Crea un volumen simple de 1 GB.
+<br>
 **c**. Crea un volumen distribuido en dos discos (1 GB y 2 GB,
 respectivamente).
+<br>
 **d**. Crea un volumen seccionado formado por dos discos de 4 GB cada uno.
+<br>
 **e**. Crea un volumen reflejado de 4 GB.
+<br>
 **f**. Copia algunos ficheros dentro de cada uno de los diferentes volúmenes
 creados, desconecta el segundo disco virtual e indica qué ha pasado con
 esos datos (si están disponibles o no) en cada uno de los volúmenes. Crea
@@ -65,24 +75,25 @@ uno de los volúmenes tras la desconexión del segundo disco virtual.¿Cuál
 se ha comportado como un RAID0 y cuál como un RAID1?. Justifica tus
 respuestas.
 
-
+<br>
 **3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
 documentando los apartados b, c, d y f:
-
+<br>
 **a.** En una máquina virtual que tenga instalado Ubuntu Linux, crea tres
 nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
-
+<br>
 **b.** Un RAID 0 que utilice dos discos virtuales de 10 GB cada uno.
-
+<br>
 **c.** Un RAID 1 que utilice dos discos virtuales de 10 GB cada uno.
-
+<br>
 **d.** Un RAID 5 que utilice tres discos virtuales de 10 GB cada uno.
-
+<br>
 **e.** Una vez creada cada unidad RAID, copia algunos ficheros dentro de ella,
 desconecta uno de los discos virtuales que la forman y comprueba qué ha
 pasado con esos datos.
-
+<br>
 **f.** Crea un esquema o tabla que describa el comportamiento que ha tenido
 cada una de las unidades RAID creadas: discos necesarios, espacio
 disponible, tolerancia al fallo de un disco, etc.
+<br>
