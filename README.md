@@ -75,6 +75,11 @@ con éxito todos los ficheros modificados/borrados erróneamente.
 (NOTA: En lugar de utilizar días de la semana reales, realiza las modificaciones
 necesarias para cumplir cada escenario y lanza manualmente la copia de
 seguridad que proceda en cada caso).
+
+Teniendo en cuenta que creamos la politica de backup un lunes, el prodecimiento seria el siguiente:
+-Al ser la copia diferencial cada 4 días, deberíamos hacer un backup de la copia total original para recuperar los archivos "originales" que hemos sobreescrito de forma errónea.
+-Para el borrado erróneo de ficheros del miércoles, nos bastaría con hacer un backup de la copia incremental del día anterior, ya que la hacemos cada 2 días, lo que nos permitiría recuperar esos ficheros.
+-Parra el borrado erróneo del jueves y creación de nuevos ficheros, deberíamos recurrir a la anterior copia incremental realizada el martes, por lo que recuperaríamos los archivos borrados, pero tendríamos que crear los nuevos.
 <br><br>
 **2**. Realiza los siguientes apartados relativos a Sistemas RAID en Windows,
 documentando los apartados b, c, d, e y f:
