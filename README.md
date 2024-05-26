@@ -26,6 +26,9 @@ C:\Users\tuUsuario\Documents\:
 - [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
+- ![2](https://github.com/DaniM266/Trabajo_Github/assets/166503414/e90f276b-0c65-4716-966e-854e0b374c01)
+![3](https://github.com/DaniM266/Trabajo_Github/assets/166503414/abadb9cc-2f61-4c98-9360-861b2b2e49da)
+
 - <br><br>
  **d**. Diseña y configura en “Paragon Backup & Recovery Community Edition” una
 política de backup que te permita mantener copia de seguridad diaria
