@@ -26,9 +26,11 @@ C:\Users\tuUsuario\Documents\:
 - [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
-En las siguientes imagenes podemos ver el proceso de creacion de los directorios:
+
+En las siguientes imagenes podemos ver el proceso de creacion de los directorios, así como una vista final con ellos ya creados:
 
  ![2](https://github.com/DaniM266/Trabajo_Github/assets/166503414/e90f276b-0c65-4716-966e-854e0b374c01)
+
 ![3](https://github.com/DaniM266/Trabajo_Github/assets/166503414/4d6f6076-b8bd-491e-a26c-ac5c383a276a)
 
 
