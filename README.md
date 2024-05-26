@@ -3,7 +3,7 @@
 documentando los apartados d y f:
  **a**. En un Windows 11 Pro instala el software “Paragon Backup & Recovery
 Community Edition”.
-![20240125_124432](https://github.com/DaniM266/Trabajo_Github/assets/167864718/d0997ec9-73c9-4748-8914-605df9ed0102)
+
 
  **b**. Dedica unos minutos a familiarizarte con su interfaz e identifica cómo
 puedes: crear diferentes tipos de copias de seguridad (completa,
