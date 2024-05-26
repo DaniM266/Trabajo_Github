@@ -2,8 +2,6 @@
 1. Realiza los siguientes apartados relativos a Copia de Seguridad en Windows,
 documentando los apartados d y f:
 <br><br>
-![20240125_124432](https://github.com/DaniM266/Trabajo_Github/assets/167864718/fbb8926f-ad47-4d8b-847d-af8836eaedb7)
-
  **a**. En un Windows 11 Pro instala el software “Paragon Backup & Recovery
 Community Edition”.
 ![1](https://github.com/DaniM266/Trabajo_Github/assets/166503414/3aaee48a-6a52-48b7-9d24-194630a01e3c)
