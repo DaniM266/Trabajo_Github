@@ -63,17 +63,25 @@ un esquema o tabla que describa el comportamiento que ha tenido cada
 uno de los volúmenes tras la desconexión del segundo disco virtual.¿Cuál
 se ha comportado como un RAID0 y cuál como un RAID1?. Justifica tus
 respuestas.
+
+
 **3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
 documentando los apartados b, c, d y f:
+
 **a.** En una máquina virtual que tenga instalado Ubuntu Linux, crea tres
 nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
+
 **b.** Un RAID 0 que utilice dos discos virtuales de 10 GB cada uno.
+
 **c.** Un RAID 1 que utilice dos discos virtuales de 10 GB cada uno.
+
 **d.** Un RAID 5 que utilice tres discos virtuales de 10 GB cada uno.
+
 **e.** Una vez creada cada unidad RAID, copia algunos ficheros dentro de ella,
 desconecta uno de los discos virtuales que la forman y comprueba qué ha
 pasado con esos datos.
+
 **f.** Crea un esquema o tabla que describa el comportamiento que ha tenido
 cada una de las unidades RAID creadas: discos necesarios, espacio
 disponible, tolerancia al fallo de un disco, etc.
