@@ -57,7 +57,7 @@ Realizaremos copias 3 dias a la semana  ya que es lo mas optimo para un usuario 
 | Cada 4 días | Diferencial | Copia los cambios realizados desde la última copia completa, con esto buscamos que una vez a la semana se guarden los cambios sobre la copia completa minimizando los errores o pérdidas de los archivos originales |
 | Cada 7 dias| Total | Hacemos una copia total sobreescribiendo todos los datos nuevos |
 
-![4](https://github.com/DaniM266/Trabajo_Github/assets/166503414/220d40e3-1021-4de4-b53d-70fb7cb7af6d)
+
 
 <br><br>
  **e**. Simula los siguientes escenarios:
