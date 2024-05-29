@@ -7,14 +7,7 @@ Community Edition”.
 ![1](https://github.com/DaniM266/Trabajo_Github/assets/166503414/3aaee48a-6a52-48b7-9d24-194630a01e3c)
 
 <br><br>
- **b**. Dedica unos minutos a familiarizarte con su interfaz e identifica cómo
-puedes: crear diferentes tipos de copias de seguridad (completa,
-incremental y diferencial), cómo programar la ejecución de las copias,
-cómo establecer copia de seguridad para todo el sistema, cómo
-establecer copia de seguridad para un conjunto de ficheros y directorios
-concreto, cómo puedes restaurar los datos que contiene una copia de
-seguridad, etc.
-<br><br>
+
  **c**. Crea la siguiente estructura de ficheros y directorios en
 C:\Users\tuUsuario\Documents\:
 - [d] DatosBackup
