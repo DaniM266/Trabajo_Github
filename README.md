@@ -113,11 +113,13 @@ C:\Users\grupo4\Documents:
 ## 2. Sistema RAID Windows
 
 1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/tipo_disco.png).
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/dad5a1d2-a0c8-49b1-bd0e-49796231eb81)
+.
 
 2. El siguiente sería escoger el tamaño del disco, en este caso añadiremos uno de 10 GB
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/seleccion_del_disco_de_10GB_vm.png).
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/7475836f-fccc-40dd-a760-349b00ec2b7d)
+
 
 3. A continuación. Ya en nuestra máquina virtual, ponemos en línea nuestro nuevo disco virtual, dándole clic derecho sobre el mismo y clicando donde pone "en línea".
 
@@ -128,19 +130,21 @@ C:\Users\grupo4\Documents:
 
 1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_distr.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/c7a66e6c-50cd-4146-b51a-8abef2c22c28)
+
 
 2. Al volumen al que le hayamos dado clic para iniciar el proceso de creación del volumen distribuido, le añadiremos el volumen restante, en nuestro caso, al de 1 GB le añadiremos el de 2 GB.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/2_gb_mas.png)
 
 3. Al igual que hicimos con el volumen simple, le daremos un formato (en este caso y en los siguientes NTFS) y un nombre para el volumen.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/formato_nombre.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/d95f14a7-3ca8-4fc6-a819-f581c8a370a9)
+
 
 4. Así es como quedaría una vez finalizado, nuestro particionado con volúmenes distribuidos.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/distr.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a9843d21-2cc6-45c4-8c91-39739adb2474)
+
 
 
 ### Creación de un volumen seccionado
