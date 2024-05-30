@@ -108,6 +108,9 @@ documentando los apartados b, c, d y f:
 nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
 <br><br>
+Creacion de los discos:
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa)
+
 **b.** Un RAID 0 que utilice dos discos virtuales de 10 GB cada uno.
 <br><br>
 **c.** Un RAID 1 que utilice dos discos virtuales de 10 GB cada uno.
