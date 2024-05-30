@@ -1,80 +1,24 @@
-# Trabajo_UD7
-1. Realiza los siguientes apartados relativos a Copia de Seguridad en Windows,
-documentando los apartados d y f:
-<br><br>
- **a**. En un Windows 11 Pro instala el software “Paragon Backup & Recovery
-Community Edition”.
-![1](https://github.com/DaniM266/Trabajo_Github/assets/166503414/3aaee48a-6a52-48b7-9d24-194630a01e3c)
-
-<br><br>
-
- **c**. Crea la siguiente estructura de ficheros y directorios en
-C:\Users\tuUsuario\Documents\:
+# UD7: Política de Backup y sistemas RAID
+## 1. Estructura de ficheros y política de **Backup** 
+### Diseño política
+Preparamos la siguiente estructura de ficheros que usaremos para hacer pruebas con el programa **Paragon Backup Community Edition**  
+````
+C:\Users\grupo4\Documents:
 - [d] DatosBackup
-- [d] Logs
-- [f] ficheroLog1.txt
-- [f] ficheroLog2.txt
+    - [f] ficheroLog1.txt   
+    - [f] ficheroLog2.txt
+- [f] fichero1.pdf
 - [f] fichero1.txt
 - [f] fichero2.txt
-- [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
+`````
+Una vez establecido el sistema de ficheros que usaremos pasamos a diseñar la política de copias de seguridad **diarias**. Hemos decido usar un ciclo de backups de **1 full + 6 increments**. Se harán todos los días a las 5:30 
+hora española empezando el día 26/05/2024. Hemos decidido usar este sistema de copias de seguridad ya que así gestionamos el espacio de la mejor manera, todos los domingos se hará una copia de seguridad completa mientras que el resto de días de la semana
+crearán una copia de seguridad incremental, lo que quiere decir que solo harán copia de lo que haya sido modificado desde la última copia de seguridad incremental o, en su defecto, completa.
+  
+Foto de como queda en el programa:  
 
-En las siguientes imagenes podemos ver el proceso de creacion de los directorios, así como una vista final con ellos ya creados:
-
- ![2](https://github.com/DaniM266/Trabajo_Github/assets/166503414/e90f276b-0c65-4716-966e-854e0b374c01)
-
-![3](https://github.com/DaniM266/Trabajo_Github/assets/166503414/4d6f6076-b8bd-491e-a26c-ac5c383a276a)
-
-
-
-- <br><br>
- **d**. Diseña y configura en “Paragon Backup & Recovery Community Edition” una
-política de backup que te permita mantener copia de seguridad diaria
-de todo el contenido del directorio “DatosBackup”, teniendo en cuenta
-las recomendaciones estudiadas en clase (optimizar el espacio dedicado
-a copias y reducir el tiempo entre copias). Habrá que programar la
-ejecución de diferentes tipos de copia de seguridad. Indica de forma
-esquemática o empleando una tabla la política de backup que has
-diseñado. Justifica el por qué de cada copia y su frecuencia.
-
-Para la política de backup hemos de tratar varios puntos:
-
-Haremos la política de backup centrada en un usuario normal de un ordenador, que lo utiliza como método de trabajo habitual.
-
-Realizaremos copias 3 dias a la semana  ya que es lo mas optimo para un usuario normal
-
-| Frecuencia | Tipo de Backup | Justificación |
-|---|---|---|
-| Cada 2 días| Incremental | Realizamos una copia desde la última copia incremental. |
-| Cada 4 días | Diferencial | Copia los cambios realizados desde la última copia completa, con esto buscamos que una vez a la semana se guarden los cambios sobre la copia completa minimizando los errores o pérdidas de los archivos originales |
-| Cada 7 dias| Total | Hacemos una copia total sobreescribiendo todos los datos nuevos |
-
-
-
-<br><br>
- **e**. Simula los siguientes escenarios:
-i. El lunes se modificaron erróneamente fichero1.txt y fichero2.txt y
-se crearon los ficheros fichero3.txt y fichero4.txt
-ii. El martes se creó el fichero5.txt
-iii. El miércoles se borro erróneamente fichero1.pdf y se crearon los
-ficheros otroFichero3.jpeg y otroFichero4.jpeg
-iv. El jueves se borró erróneamente otroFichero1.jpg y se crearon los
-ficheros ficheroLog3.txt y ficheroLog4.txt (directorio Logs)
-<br><br>
-**f.** Realiza y documenta el proceso de restauración que llevarías a cabo el
-viernes tras caer en la cuenta de los errores generados durante la
-semana, simulados anteriormente. El proceso debe permitir recuperar
-con éxito todos los ficheros modificados/borrados erróneamente.
-(NOTA: En lugar de utilizar días de la semana reales, realiza las modificaciones
-necesarias para cumplir cada escenario y lanza manualmente la copia de
-seguridad que proceda en cada caso).
-
-Teniendo en cuenta que creamos la politica de backup un lunes, el prodecimiento seria el siguiente:
--Al ser la copia diferencial cada 4 días, deberíamos hacer un backup de la copia total original para recuperar los archivos "originales" que hemos sobreescrito de forma errónea.
--Para el borrado erróneo de ficheros del miércoles, nos bastaría con hacer un backup de la copia incremental del día anterior, ya que la hacemos cada 2 días, lo que nos permitiría recuperar esos ficheros.
--Parra el borrado erróneo del jueves y creación de nuevos ficheros, deberíamos recurrir a la anterior copia incremental realizada el martes, por lo que recuperaríamos los archivos borrados, pero tendríamos que crear los nuevos.
-<br><br>
 ## 2. Sistema RAID Windows
 
 1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
