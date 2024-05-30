@@ -75,32 +75,69 @@ Teniendo en cuenta que creamos la politica de backup un lunes, el prodecimiento 
 -Para el borrado erróneo de ficheros del miércoles, nos bastaría con hacer un backup de la copia incremental del día anterior, ya que la hacemos cada 2 días, lo que nos permitiría recuperar esos ficheros.
 -Parra el borrado erróneo del jueves y creación de nuevos ficheros, deberíamos recurrir a la anterior copia incremental realizada el martes, por lo que recuperaríamos los archivos borrados, pero tendríamos que crear los nuevos.
 <br><br>
-**2**. Realiza los siguientes apartados relativos a Sistemas RAID en Windows,
-documentando los apartados b, c, d, e y f:
-<br><br>
-**a**. En una máquina virtual que tenga instalado Windows 11 Education Pro,
-crea dos nuevos discos virtuales de 10 GB cada uno. Una vez arrancado
-Windows, utilizando la herramienta “Administración de discos”, inicializa
-cada uno de los dos discos como “Disco Dinámico” y realiza lo siguiente:
-<br><br>
-**b**. Crea un volumen simple de 1 GB.
-<br><br>
-**c**. Crea un volumen distribuido en dos discos (1 GB y 2 GB,
-respectivamente).
-<br><br>
-**d**. Crea un volumen seccionado formado por dos discos de 4 GB cada uno.
-<br><br>
-**e**. Crea un volumen reflejado de 4 GB.
-<br><br>
-**f**. Copia algunos ficheros dentro de cada uno de los diferentes volúmenes
-creados, desconecta el segundo disco virtual e indica qué ha pasado con
-esos datos (si están disponibles o no) en cada uno de los volúmenes. Crea
-un esquema o tabla que describa el comportamiento que ha tenido cada
-uno de los volúmenes tras la desconexión del segundo disco virtual.¿Cuál
-se ha comportado como un RAID0 y cuál como un RAID1?. Justifica tus
-respuestas.
+## 2. Sistema RAID Windows
 
-<br><br>
+1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/tipo_disco.png).
+
+2. El siguiente sería escoger el tamaño del disco, en este caso añadiremos uno de 10 GB
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/seleccion_del_disco_de_10GB_vm.png).
+
+3. A continuación. Ya en nuestra máquina virtual, ponemos en línea nuestro nuevo disco virtual, dándole clic derecho sobre el mismo y clicando donde pone "en línea".
+
+4. Para crear un volumen simple, le damos clic derecho sobre nuestro disco sin formato, le damos un formato (NTFS, FAT32, FAT, ReFS) y un nombre para el volumen.
+
+
+### Creación de un volumen distribuido.
+
+1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_distr.png)
+
+2. Al volumen al que le hayamos dado clic para iniciar el proceso de creación del volumen distribuido, le añadiremos el volumen restante, en nuestro caso, al de 1 GB le añadiremos el de 2 GB.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/2_gb_mas.png)
+
+3. Al igual que hicimos con el volumen simple, le daremos un formato (en este caso y en los siguientes NTFS) y un nombre para el volumen.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/formato_nombre.png)
+
+4. Así es como quedaría una vez finalizado, nuestro particionado con volúmenes distribuidos.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/distr.png)
+
+
+### Creación de un volumen seccionado
+
+Para la creación de este volumen sería exactamente lo mismo que en el anterior caso, simplemente los cambios son, que los discos tienen ambos 4 GB.
+
+1. Clic derecho en el disco que le queramos crear el tipo de volumen seccionado.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc_4gb.png)
+
+2. Le damos formato y nombre al volumen y finalmente nuestro volumen seccionado aparecería de la siguiente manera.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc.png)
+
+
+### Creación de un volumen reflejado
+
+Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato.
+
+1. El primer paso sería darle clic derecho sobre uno de los discos y seleccionar la opción de "Nuevo volumen refeljado".
+
+2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados.
+
+La información del volumen sería la siguiente.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/Info_refl.png)
+
+3. Y finalmente así es como quedaría el gestor de discos con estes volúmenes reflejados.
+
+![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_refl.png)
+
+````
 **3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
 documentando los apartados b, c, d y f:
 <br><br>
