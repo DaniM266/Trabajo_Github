@@ -153,11 +153,13 @@ Para la creación de este volumen sería exactamente lo mismo que en el anterior
 
 1. Clic derecho en el disco que le queramos crear el tipo de volumen seccionado.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc_4gb.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a3b8f7e2-470c-4b93-917f-f042d3ba106a)
+
 
 2. Le damos formato y nombre al volumen y finalmente nuestro volumen seccionado aparecería de la siguiente manera.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_secc.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a5bf218c-032c-4e38-b291-162dd714144b)
+
 
 
 ### Creación de un volumen reflejado
@@ -170,13 +172,16 @@ Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) 
 
 La información del volumen sería la siguiente.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/Info_refl.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/fdf12c9c-fbc0-4642-9c42-56508173550b)
+
 
 3. Y finalmente así es como quedaría el gestor de discos con estes volúmenes reflejados.
 
-![image](https://github.com/Carlos0rpa/Trabajo-M.2/blob/main/vol_refl.png)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/4f4c6001-a2d8-4e73-bc94-6633b5a35cdf)
+
 
 ````
+
 **3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
 documentando los apartados b, c, d y f:
 <br><br>
@@ -201,3 +206,4 @@ pasado con esos datos.
 cada una de las unidades RAID creadas: discos necesarios, espacio
 disponible, tolerancia al fallo de un disco, etc.
 <br><br>
+
