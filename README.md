@@ -129,22 +129,31 @@ En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco 
 
 ### Creación de un volumen distribuido.
 
-1. Para la creación de este volumen, reduciremos el tamaño de nuestro disco principal en 1024 MB y de nuestro disco virtual 2048 MB (ambos sin formato).
-
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/c7a66e6c-50cd-4146-b51a-8abef2c22c28)
-
-
-2. Al volumen al que le hayamos dado clic para iniciar el proceso de creación del volumen distribuido, le añadiremos el volumen restante, en nuestro caso, al de 1 GB le añadiremos el de 2 GB.
+1. Primero creamos dos volumenes simples de 1GB en cada disco, como se indica en el ejercicio:
+![volumen_simple](https://github.com/DaniM266/Trabajo_Github/assets/73694734/12d69afc-2696-4cd8-93da-7187cd0c8734)
+Más tarde, dejamos 1 GB libre en el primer disco y 2 en el segundo, pra dar comienzo al siguient epaso que es crear un volumen distribuido:
+![espacio_libre](https://github.com/DaniM266/Trabajo_Github/assets/73694734/9e2e366a-6631-44a7-bf4e-cc0d15a791ed)
 
 
-3. Al igual que hicimos con el volumen simple, le daremos un formato (en este caso y en los siguientes NTFS) y un nombre para el volumen.
-
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/d95f14a7-3ca8-4fc6-a819-f581c8a370a9)
 
 
-4. Así es como quedaría una vez finalizado, nuestro particionado con volúmenes distribuidos.
+3. Click derecho en el volumen restante del disco 1, selecciona,os volumen distribuido, y le metemos al disco 1 el espacio restante del disco 2:
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/cbe06a08-dac4-4a12-9a77-8f42a1c0ed10)
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a9843d21-2cc6-45c4-8c91-39739adb2474)
+
+4.Le daremos el mismo formato que a los volumenes anteriores (NTFS): 
+
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/98238ea9-0579-428d-886f-24b167cdbf82)
+
+
+
+
+4. Así quedaría una vez finalizado el proceso:
+
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25e89634-64e4-476f-a64d-376923bfb3ac)
+Para poder llevar a cabo esto, el sistema nos pide que aceptemos el cambio de los discos a dinámico: 
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eb58c5d6-1255-4768-9f7f-30c0d222cf3e)
+
 
 
 
