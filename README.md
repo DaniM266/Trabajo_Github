@@ -112,7 +112,7 @@ C:\Users\grupo4\Documents:
 
 ## 2. Sistema RAID Windows
 
-1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
+1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11. En este caso nos interesa crear 2 discos para realizar las pruebas, pero la guia de creacion la realizaremos de 1 solo.
 ![discoduro](https://github.com/DaniM266/Trabajo_Github/assets/73694734/1a65787e-0331-4c28-a259-27d9fb53cefc)
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
