@@ -213,15 +213,23 @@ herramienta MDADM y configura lo siguiente:
 <br><br>
 Creacion de los discos:
 En la primera imagen podemos ver como añadimos los discos a la máquina virtual.
+
+
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa)
 Mientras que en esta segunda, podemos apreciar como se ven los discos dentro del sistema, después de crear las particiones para poder realizar los raids de forma más cómoda.
+
+
 ![linux1](https://github.com/DaniM266/Trabajo_Github/assets/73694734/94953e26-4dad-4e8e-b634-f675afde6164)
 
 
 **b.** Un RAID 0 que utilice dos discos virtuales de 10 GB cada uno.
 En esta primera imagen podemos ver como creamos el raid0, con sus respectivo comando:
+
+
 ![raid0](https://github.com/DaniM266/Trabajo_Github/assets/73694734/e5c08323-6006-402e-a8ab-0e44017b7cc3)
 En esa segunda, vemos como quedaría la información del raid, tanto su versión como su tamaño, etc.
+
+
 ![raid0_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/177026c6-5d6e-4464-9258-6367e8314700)
 <br><br>
 
@@ -237,6 +245,8 @@ En esa segunda, vemos como quedaría la información del raid, tanto su versión
 <br><br>
 **d.** Un RAID 5 que utilice tres discos virtuales de 10 GB cada uno.
 Finalmente, en estas capturas podemos apreciar como se crea el raid y como se vería finalmente su información.
+
+
 ![raid5](https://github.com/DaniM266/Trabajo_Github/assets/73694734/effd9786-8cf2-4972-876c-b3c3a5a0509c)
 ![raid5_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/2705b3d2-3270-4ec4-830c-9a25281982f5)
 
