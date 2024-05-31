@@ -54,20 +54,20 @@ Comenzaremos de atrás a adelante, es decir, comenzaremos desde el viernes.
 
 ## 2. RAID en windows
 
-Añadimos 2 discos a nuestra máquina virtual:
+Añadimos 2 discos iguales a nuestra máquina virtual, pero vamos a documentar la creación de 1 solo:
 
 ![discoduro](https://github.com/DaniM266/Trabajo_Github/assets/73694734/1a65787e-0331-4c28-a259-27d9fb53cefc)
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
 
-En este paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
+En este paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuado para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eea0cf0d-cab7-40a6-ae12-c52248b132de)
 
 
 Seguidamente, tenemos que abrir la maquina, entrar en el gestor de discos y poner nuestro disco en linea.
 
-Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al dsico.
+Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al disco.
 
 
 ### Volumen distribuido
