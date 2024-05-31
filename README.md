@@ -1,26 +1,28 @@
 # UD7: Política de Backup y sistemas RAID
-## 1. Estructura de ficheros y política de **Backup** 
-### Diseño política
-Preparamos la siguiente estructura de ficheros que usaremos para hacer pruebas con el programa **Paragon Backup Community Edition**  
+## 1. Copias de seguridad de windows
+### Diseño de la política de backup
+Vamos a utilizar la siguiente estructura de ficheros para simular una serie de fallos:
 ````
-C:\Users\grupo4\Documents:
+C:\Users\Roi\Documents\:
 - [d] DatosBackup
-    - [f] ficheroLog1.txt   
-    - [f] ficheroLog2.txt
-- [f] fichero1.pdf
+- [d] Logs
+- [f] ficheroLog1.txt
+- [f] ficheroLog2.txt
 - [f] fichero1.txt
 - [f] fichero2.txt
+- [f] fichero1.pdf
 - [f] otroFichero1.jpeg
 - [f] otroFichero2.jpeg
-`````
-Una vez establecido el sistema de ficheros que usaremos pasamos a diseñar la política de copias de seguridad **diarias**. Hemos decido usar un ciclo de backups de **1 full + 6 increments**. Se harán todos los días a las 5:30 
-hora española empezando el día 26/05/2024. Hemos decidido usar este sistema de copias de seguridad ya que así gestionamos el espacio de la mejor manera, todos los domingos se hará una copia de seguridad completa mientras que el resto de días de la semana
-crearán una copia de seguridad incremental, lo que quiere decir que solo harán copia de lo que haya sido modificado desde la última copia de seguridad incremental o, en su defecto, completa.
-  
-Foto de como queda en el programa:  
-![backup](https://github.com/DaniM266/Trabajo_Github/assets/166503414/1ddd83a9-f376-4e67-8c1e-ad011301557a)
 
-### Pruebas
+`````
+Para la política de bakup, creemos que lo más correcto es establecer 5 copias incrementales durante la semana, cada día una, y el fin de semana una copia completa para de esta forma poder aprovechar las horas del fin de semana para realizar la copia más pesada que es la completa.
+Además de esto, hemos programado la hora de las copias para las 4 de la mañana, hora en la que no habrá nadie usando el sistema por lo que no intervendrá en ni ningún proceso y se podrá efectuar de forma más eficiente.
+  
+En el programa de paragon quedaría de la siguiente manera:
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25a40d4c-d34b-401b-81e4-5f1c8dfa8df0)
+
+
+### Simulación de fallos
 
 Para poner a prueba nuestra política de copias de seguridad haremos lo siguiente:  
 1. Creamos una copia de seguridad completa simulando que es Domingo
@@ -29,102 +31,33 @@ Para poner a prueba nuestra política de copias de seguridad haremos lo siguient
 4. Miercoles borramos erróneamente fichero1.pdf y creamos otroFichero3.jpg y otroFicheroLog4.jpg
 5. Jueves borramos erróneamente otroFichero1.jpg y creamos ficheroLog3.txt y ficheroLog4.txt
   
-Cuando llegamos el viernes para solucionar los problemas nos encontramos con las siguientes copias de seguridad hechas:
-![8](https://github.com/DaniM266/Trabajo_Github/assets/166503414/99134f8d-448b-45dd-9eaf-4059b2cc9444)
+Ahora vamos a simular las copias de seguridad realizadas durante la semana, además de la completa del doming, lo que quedaría de la siguiente forma:
 
-En este punto contamos con la siguiente estructura de ficheros:
-````
-C:\Users\grupo4\Documents:
-- [d] DatosBackup
-    - [f] ficheroLog1.txt   
-    - [f] ficheroLog2.txt
-    - [f] ficheroLog3.txt   
-    - [f] ficheroLog4.txt
-- [f] fichero1.txt [ERROR]
-- [f] fichero2.txt [ERROR]
-- [f] fichero3.pdf
-- [f] fichero4.txt
-- [f] fichero5.txt
-- [f] otroFichero2.jpeg
-- [f] otroFichero3.jpeg
-- [f] otroFichero4.jpeg
-````
+A día de viernes, contamos con 2 archivos que contienen un error no deseado (fichero1.txt y fichero2.txt) y dos ficheros borrados de forma errónea.
+Para recuperar los archivos que nos interesan haremos lo siguiente:  
 
-Para restaurar esto haremos lo siguiente:  
+Comenzaremos de atrás a adelante, es decir, comenzaremos desde el viernes.
 
-1. Al no haber hecho cambios aún el viernes no tendremos que restaurar la copia de seguridad de jueves ya que es la misma que la que tenemos. Restauramos la copia de seguridad del miercoles. En este proceso
-recuperamos el fichero otroFichero1.jpg que eliminamos por error el jueves.
-````
-C:\Users\grupo4\Documents:
-- [d] DatosBackup
-    - [f] ficheroLog1.txt
-    - [f] ficheroLog2.txt    
-    - [f] ficheroLog3.txt   
-    - [f] ficheroLog4.txt
-- [f] fichero1.txt [ERROR]
-- [f] fichero2.txt [ERROR]
-- [f] fichero3.pdf
-- [f] fichero4.txt
-- [f] fichero5.txt
-- [f] otroFichero1.jpeg
-- [f] otroFichero2.jpeg
-- [f] otroFichero3.jpeg
-- [f] otroFichero4.jpeg
-````
-2. La restauración del martes es redundante ya que, el fichero5.txt lo tenemos ya y el fichero1.pdf lo podemos recuperar con la copia de seguridad del lunes. Restauramos la copia del lunes y recuperaremos el fichero1.pdf
-````
-C:\Users\grupo4\Documents:
-- [d] DatosBackup
-    - [f] ficheroLog1.txt
-    - [f] ficheroLog2.txt    
-    - [f] ficheroLog3.txt   
-    - [f] ficheroLog4.txt
-- [f] fichero1.pdf
-- [f] fichero1.txt [ERROR]
-- [f] fichero2.txt [ERROR]
-- [f] fichero3.pdf
-- [f] fichero4.txt
-- [f] fichero5.txt
-- [f] otroFichero1.jpeg
-- [f] otroFichero2.jpeg
-- [f] otroFichero3.jpeg
-- [f] otroFichero4.jpeg
-````
-3. Por último restauramos la copia de seguridad completa para volver a tener los archivos fichero1.txt y fichero2.txt sin errores.
-````
-C:\Users\grupo4\Documents:
-- [d] DatosBackup
-    - [f] ficheroLog1.txt
-    - [f] ficheroLog2.txt  
-    - [f] ficheroLog3.txt   
-    - [f] ficheroLog4.txt
-- [f] fichero1.pdf
-- [f] fichero1.txt
-- [f] fichero2.txt
-- [f] fichero3.pdf
-- [f] fichero4.txt
-- [f] fichero5.txt
-- [f] otroFichero1.jpeg
-- [f] otroFichero2.jpeg
-- [f] otroFichero3.jpeg
-- [f] otroFichero4.jpeg
-````   
+1.El viernes no hemos modificado nada y el error está en el jueves, por lo que nos interesa recuperar la copia del miércoles (suponiendo que no sabemos a que hora se ha borrado el archivo por eso no cogemos la del mismo día). Este proceso nos permitirá recuperar "otroFichero1.jpg" que había sido borrado por accidente.
+2. Para recuperar el "fichero1.pdf" borrado el miércoles, nos interesará hacer el backup del día martes.
+3. Finalmente, para recuperar los errores de "fichero1.txt" y "fichero2.txt" modificados erroneamente el lunes, haremos un backup de la copia completa que se realizó del domingo.
+    
 
-## 2. Sistema RAID Windows
+## 2. RAID en windows
 
-1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11. En este caso nos interesa crear 2 discos para realizar las pruebas, pero la guia de creacion la realizaremos de 1 solo.
+Añadimos 2 discos a nuestra máquina virtual:
 ![discoduro](https://github.com/DaniM266/Trabajo_Github/assets/73694734/1a65787e-0331-4c28-a259-27d9fb53cefc)
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
 
-2.En este paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
+En este paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eea0cf0d-cab7-40a6-ae12-c52248b132de)
 
 
-3. Seguidamente, tenemos que abrir la maquina, entrar en el gestor de discos y poner nuestro disco en linea.
+Seguidamente, tenemos que abrir la maquina, entrar en el gestor de discos y poner nuestro disco en linea.
 
-4. Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al dsico.
+Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al dsico.
 
 
 ### Creación de un volumen distribuido.
@@ -163,7 +96,7 @@ Para poder llevar a cabo esto, el sistema nos pide que aceptemos el cambio de lo
 
 
 
-### Creación de un volumen seccionado
+### Volumen seccionado
 
 Para esto, repetiremos los mismos pasos que antes, pero teniendo 4GB de espacio disponible en cada disco..
 
@@ -183,13 +116,9 @@ Como el el tamaño del disco 2 era mayor, se nos crea un espacio con la diferenc
 
 
 
-### Creación de un volumen reflejado
+### Volumen reflejado
 
-Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato, como en el apartado anterior.
-
-1. El primer paso sería darle clic derecho sobre uno de los discos y seleccionar la opción de "Nuevo volumen refeljado".
-
-2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados y seleccionar el segundo disco.
+Para esto, necesitamos seguir los mismos pasos que para el paso anterior, disponer de 4GB libres en cada disco, darle click derecho a esa parte y darle a volumen reflejado.
 
 Quedaría así:
 
@@ -198,7 +127,7 @@ Quedaría así:
 
 
 
-3. Este sería el resultado:
+Este sería el resultado:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/4f4c6001-a2d8-4e73-bc94-6633b5a35cdf)
 
