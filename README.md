@@ -137,8 +137,7 @@ Este sería el resultado:
 
 
 
-**3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
-documentando los apartados b, c, d y f:
+### RAID en Linux
 <br><br>
 **a.** En una máquina virtual que tenga instalado Ubuntu Linux, crea tres
 nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
