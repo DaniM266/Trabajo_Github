@@ -113,8 +113,8 @@ C:\Users\grupo4\Documents:
 ## 2. Sistema RAID Windows
 
 1. El primer paso sería añadirle un nuevo disco virtual a nuestra máquina con Windows 11
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/dad5a1d2-a0c8-49b1-bd0e-49796231eb81)
-.
+![dicoduro](https://github.com/DaniM266/Trabajo_Github/assets/73694734/12930428-33f7-4fd0-8892-d525f4099452)
+En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
 
 2. El siguiente sería escoger el tamaño del disco, en este caso añadiremos uno de 10 GB
 
