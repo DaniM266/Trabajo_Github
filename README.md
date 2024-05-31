@@ -19,7 +19,8 @@ Para la política de bakup, creemos que lo más correcto es establecer 5 copias 
 Además de esto, hemos programado la hora de las copias para las 4 de la mañana, hora en la que no habrá nadie usando el sistema por lo que no intervendrá en ni ningún proceso y se podrá efectuar de forma más eficiente.
   
 En el programa de paragon quedaría de la siguiente manera:
-![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25a40d4c-d34b-401b-81e4-5f1c8dfa8df0)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/b54d3daa-9851-4829-9833-55af63ebbb56)
+
 
 
 ### Simulación de fallos
@@ -32,6 +33,9 @@ Para poner a prueba nuestra política de copias de seguridad haremos lo siguient
 5. Jueves borramos erróneamente otroFichero1.jpg y creamos ficheroLog3.txt y ficheroLog4.txt
   
 Ahora vamos a simular las copias de seguridad realizadas durante la semana, además de la completa del doming, lo que quedaría de la siguiente forma:
+
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/0c8e2016-dd82-43d8-83b3-d5d8e3c74bd8)
+
 
 A día de viernes, contamos con 2 archivos que contienen un error no deseado (fichero1.txt y fichero2.txt) y dos ficheros borrados de forma errónea.
 Para recuperar los archivos que nos interesan haremos lo siguiente:  
