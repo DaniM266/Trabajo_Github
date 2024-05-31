@@ -25,8 +25,7 @@ En el programa de paragon quedaría de la siguiente manera:
 
 ### Simulación de fallos
 
-Para poner a prueba nuestra política de copias de seguridad haremos lo siguiente:  
-
+Para la realización de esta simulación de una serie de errores y fallos, seguiremos el siguiente esquema que se plantea en el ejercicio:
 
 1. Creamos una copia de seguridad completa simulando que es Domingo
 2. El lunes modificamos erroneamente fichero1.txt fichero2.txt y creamos fichero3.txt y fichero4.txt
@@ -70,9 +69,9 @@ Seguidamente, tenemos que abrir la maquina, entrar en el gestor de discos y pone
 Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al dsico.
 
 
-### Creación de un volumen distribuido.
+### Volumen distribuido
 
-1. Primero creamos dos volumenes simples de 1GB en cada disco, como se indica en el ejercicio:
+Primero creamos dos volumenes simples de 1GB en cada disco, como se indica en el ejercicio:
 ![volumen_simple](https://github.com/DaniM266/Trabajo_Github/assets/73694734/12d69afc-2696-4cd8-93da-7187cd0c8734)
 
 
@@ -80,20 +79,16 @@ Más tarde, dejamos 1 GB libre en el primer disco y 2 en el segundo, pra dar com
 ![espacio_libre](https://github.com/DaniM266/Trabajo_Github/assets/73694734/9e2e366a-6631-44a7-bf4e-cc0d15a791ed)
 
 
-
-
-3. Click derecho en el volumen restante del disco 1, selecciona,os volumen distribuido, y le metemos al disco 1 el espacio restante del disco 2:
+Click derecho en el volumen restante del disco 1, selecciona,os volumen distribuido, y le metemos al disco 1 el espacio restante del disco 2:
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/cbe06a08-dac4-4a12-9a77-8f42a1c0ed10)
 
 
-4.Le daremos el mismo formato que a los volumenes anteriores (NTFS): 
+Le daremos el mismo formato que a los volumenes anteriores (NTFS): 
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/98238ea9-0579-428d-886f-24b167cdbf82)
 
 
-
-
-4. Así quedaría una vez finalizado el proceso:
+Así quedaría una vez finalizado el proceso:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25e89634-64e4-476f-a64d-376923bfb3ac)
 
