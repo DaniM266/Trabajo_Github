@@ -89,7 +89,7 @@ Le daremos el mismo formato que a los volumenes anteriores (NTFS):
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/98238ea9-0579-428d-886f-24b167cdbf82)
 
 
-Así quedaría una vez finalizado el proceso:
+Así quedaría al terminar el proceso:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25e89634-64e4-476f-a64d-376923bfb3ac)
 
