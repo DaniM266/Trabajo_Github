@@ -26,6 +26,8 @@ En el programa de paragon quedaría de la siguiente manera:
 ### Simulación de fallos
 
 Para poner a prueba nuestra política de copias de seguridad haremos lo siguiente:  
+
+
 1. Creamos una copia de seguridad completa simulando que es Domingo
 2. El lunes modificamos erroneamente fichero1.txt fichero2.txt y creamos fichero3.txt y fichero4.txt
 3. Martes creamos fichero5.txt
@@ -43,7 +45,11 @@ Para recuperar los archivos que nos interesan haremos lo siguiente:
 Comenzaremos de atrás a adelante, es decir, comenzaremos desde el viernes.
 
 1.El viernes no hemos modificado nada y el error está en el jueves, por lo que nos interesa recuperar la copia del miércoles (suponiendo que no sabemos a que hora se ha borrado el archivo por eso no cogemos la del mismo día). Este proceso nos permitirá recuperar "otroFichero1.jpg" que había sido borrado por accidente.
+
+
 2. Para recuperar el "fichero1.pdf" borrado el miércoles, nos interesará hacer el backup del día martes.
+
+  
 3. Finalmente, para recuperar los errores de "fichero1.txt" y "fichero2.txt" modificados erroneamente el lunes, haremos un backup de la copia completa que se realizó del domingo.
     
 
