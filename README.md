@@ -145,10 +145,11 @@ nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
 <br><br>
 Creacion de los discos:
-En la primera imagen podemos ver como añadimos los discos a la máquina virtual.
+En la siguiente imagen podemos ver los discos añadidos a la máquina virtual, siendo el primero el que se añade por defecto y linux_5,6 y 7 los que creamos nosotros para este ejercicio.
 
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/0ee7967f-4f4a-4501-95b6-b8b202bb26b6)
+
 Mientras que en esta segunda, podemos apreciar como se ven los discos dentro del sistema, después de crear las particiones para poder realizar los raids de forma más cómoda.
 
 
