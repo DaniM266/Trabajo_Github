@@ -1,4 +1,4 @@
-# UD7: Política de Backup y sistemas RAID
+# Trabajo UD7
 ## 1. Copias de seguridad de windows
 ### Diseño de la política de backup
 Vamos a utilizar la siguiente estructura de ficheros para simular una serie de fallos:
