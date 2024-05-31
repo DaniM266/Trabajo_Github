@@ -190,13 +190,24 @@ nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
 <br><br>
 Creacion de los discos:
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa
+![linux1](https://github.com/DaniM266/Trabajo_Github/assets/73694734/94953e26-4dad-4e8e-b634-f675afde6164)
+
 
 **b.** Un RAID 0 que utilice dos discos virtuales de 10 GB cada uno.
+![raid0](https://github.com/DaniM266/Trabajo_Github/assets/73694734/e5c08323-6006-402e-a8ab-0e44017b7cc3)
+![raid0_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/177026c6-5d6e-4464-9258-6367e8314700)
 <br><br>
+
 **c.** Un RAID 1 que utilice dos discos virtuales de 10 GB cada uno.
+![raid1](https://github.com/DaniM266/Trabajo_Github/assets/73694734/e2d629cf-cc98-484e-8379-c235c38feeb2)
+![raid1_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/a95524a6-6564-425c-bc1d-359845a3d599)
+
 <br><br>
 **d.** Un RAID 5 que utilice tres discos virtuales de 10 GB cada uno.
+![raid5](https://github.com/DaniM266/Trabajo_Github/assets/73694734/effd9786-8cf2-4972-876c-b3c3a5a0509c)
+![raid5_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/2705b3d2-3270-4ec4-830c-9a25281982f5)
+
 <br><br>
 **e.** Una vez creada cada unidad RAID, copia algunos ficheros dentro de ella,
 desconecta uno de los discos virtuales que la forman y comprueba qué ha
