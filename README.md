@@ -156,6 +156,8 @@ Más tarde, dejamos 1 GB libre en el primer disco y 2 en el segundo, pra dar com
 
 
 Para poder llevar a cabo esto, el sistema nos pide que aceptemos el cambio de los discos a dinámico: 
+
+
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eb58c5d6-1255-4768-9f7f-30c0d222cf3e)
 
 
@@ -174,6 +176,8 @@ Para esto, repetiremos los mismos pasos que antes, pero teniendo 4GB de espacio 
 2. El resultado seria el siguiente:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/b69096cd-783c-4c2a-b9b5-797067d9c914)
+
+
 Como el el tamaño del disco 2 era mayor, se nos crea un espacio con la diferencia llamado "NO".
 
 
@@ -188,6 +192,8 @@ Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) 
 2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados y seleccionar el segundo disco.
 
 Quedaría así:
+
+
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/7ed6f583-6740-46c8-bc16-6494bfb42289)
 
 
