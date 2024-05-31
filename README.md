@@ -190,7 +190,7 @@ nuevos discos virtuales de 10 GB cada uno. Investiga sobre el uso de la
 herramienta MDADM y configura lo siguiente:
 <br><br>
 Creacion de los discos:
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa
+![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/696330e0-5825-4fa9-971d-554b7c0145aa)
 ![linux1](https://github.com/DaniM266/Trabajo_Github/assets/73694734/94953e26-4dad-4e8e-b634-f675afde6164)
 
 
