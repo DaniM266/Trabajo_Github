@@ -256,6 +256,12 @@ Crea un esquema o tabla que describa el comportamiento que ha tenido
 cada una de las unidades RAID creadas: discos necesarios, espacio
 disponible, tolerancia al fallo de un disco, etc.
 
+| Header 1 | Header 2 | Header 3 |
+|Pedro|---|---|
+| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 |
+| Row 2, Column 1 | Row 2, Column 2 |
+| --- | --- | Row 3, Column 3 (spans 2 rows) |
+
 | Raid | Discos | Espacio | Tolerancia a los fallos |
 |---|---|---|
 | Raid 0 | Empleamos 2 discos | Se usa el 100% del espacio disponible | No nos podemos permitir el fallo de ningún disco |
