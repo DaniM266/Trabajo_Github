@@ -117,7 +117,7 @@ C:\Users\grupo4\Documents:
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
 
-2.En eeste paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
+2.En este paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eea0cf0d-cab7-40a6-ae12-c52248b132de)
 
@@ -131,6 +131,8 @@ En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco 
 
 1. Primero creamos dos volumenes simples de 1GB en cada disco, como se indica en el ejercicio:
 ![volumen_simple](https://github.com/DaniM266/Trabajo_Github/assets/73694734/12d69afc-2696-4cd8-93da-7187cd0c8734)
+
+
 Más tarde, dejamos 1 GB libre en el primer disco y 2 en el segundo, pra dar comienzo al siguient epaso que es crear un volumen distribuido:
 ![espacio_libre](https://github.com/DaniM266/Trabajo_Github/assets/73694734/9e2e366a-6631-44a7-bf4e-cc0d15a791ed)
 
@@ -151,6 +153,8 @@ Más tarde, dejamos 1 GB libre en el primer disco y 2 en el segundo, pra dar com
 4. Así quedaría una vez finalizado el proceso:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/25e89634-64e4-476f-a64d-376923bfb3ac)
+
+
 Para poder llevar a cabo esto, el sistema nos pide que aceptemos el cambio de los discos a dinámico: 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eb58c5d6-1255-4768-9f7f-30c0d222cf3e)
 
