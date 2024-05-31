@@ -159,38 +159,40 @@ Para poder llevar a cabo esto, el sistema nos pide que aceptemos el cambio de lo
 
 ### Creación de un volumen seccionado
 
-Para la creación de este volumen sería exactamente lo mismo que en el anterior caso, simplemente los cambios son, que los discos tienen ambos 4 GB.
+Para esto, repetiremos los mismos pasos que antes, pero teniendo 4GB de espacio disponible en cada disco..
 
-1. Clic derecho en el disco que le queramos crear el tipo de volumen seccionado.
+1. Repetiremos los mismos pasos que antes pero seleccionando la opcion de volumen seleccionado:
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a3b8f7e2-470c-4b93-917f-f042d3ba106a)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/c071d2b7-3b52-49e6-a348-77a7a3b1f587)
 
 
-2. Le damos formato y nombre al volumen y finalmente nuestro volumen seccionado aparecería de la siguiente manera.
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/a5bf218c-032c-4e38-b291-162dd714144b)
+2. El resultado seria el siguiente:
+
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/b69096cd-783c-4c2a-b9b5-797067d9c914)
+Como el el tamaño del disco 2 era mayor, se nos crea un espacio con la diferencia llamado "NO".
+
 
 
 
 ### Creación de un volumen reflejado
 
-Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato.
+Para este volumen necesitaremos otras dos secciones de disco (una por cada uno) de 4 GB de almacenamiento, sin formato, como en el apartado anterior.
 
 1. El primer paso sería darle clic derecho sobre uno de los discos y seleccionar la opción de "Nuevo volumen refeljado".
 
-2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados.
+2. El siguiente paso sería darle formato y nombre al volumen, como hicimos en los anteriores dos apartados y seleccionar el segundo disco.
 
-La información del volumen sería la siguiente.
+Quedaría así:
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/7ed6f583-6740-46c8-bc16-6494bfb42289)
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/fdf12c9c-fbc0-4642-9c42-56508173550b)
 
 
-3. Y finalmente así es como quedaría el gestor de discos con estes volúmenes reflejados.
+3. Este sería el resultado:
 
 ![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/4f4c6001-a2d8-4e73-bc94-6633b5a35cdf)
 
 
-````
 
 **3.** Realiza los siguientes apartados relativos a Sistemas RAID en Ubuntu Linux,
 documentando los apartados b, c, d y f:
