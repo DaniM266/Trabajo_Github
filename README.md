@@ -55,6 +55,7 @@ Comenzaremos de atrás a adelante, es decir, comenzaremos desde el viernes.
 ## 2. RAID en windows
 
 Añadimos 2 discos a nuestra máquina virtual:
+
 ![discoduro](https://github.com/DaniM266/Trabajo_Github/assets/73694734/1a65787e-0331-4c28-a259-27d9fb53cefc)
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
