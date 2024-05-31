@@ -251,12 +251,15 @@ Finalmente, en estas capturas podemos apreciar como se crea el raid y como se ve
 ![raid5_justi](https://github.com/DaniM266/Trabajo_Github/assets/73694734/2705b3d2-3270-4ec4-830c-9a25281982f5)
 
 <br><br>
-**e.** Una vez creada cada unidad RAID, copia algunos ficheros dentro de ella,
-desconecta uno de los discos virtuales que la forman y comprueba qué ha
-pasado con esos datos.
-<br><br>
-**f.** Crea un esquema o tabla que describa el comportamiento que ha tenido
+
+Crea un esquema o tabla que describa el comportamiento que ha tenido
 cada una de las unidades RAID creadas: discos necesarios, espacio
 disponible, tolerancia al fallo de un disco, etc.
+
+| Raid | Discos | Espacio | Tolerancia a los fallos |
+|---|---|---|
+| Raid 0 | Empleamos 2 discos | Se usa el 100% del espacio disponible | No nos podemos permitir el fallo de ningún disco |
+| Raid 1 | Empleamos 2 discos | Se usa el 50% del espacio disponible | Podemos suplir el fallo de 1 disco |
+| Raid 5 | Utilizamos 3 discos |  Se usa el 66% del espacio disponible | Podemos tolerar el fallo de 1 disco |
 <br><br>
 
