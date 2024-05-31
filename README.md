@@ -124,18 +124,20 @@ Como el el tamaño del disco 2 era mayor, se nos crea un espacio con la diferenc
 
 ### Volumen reflejado
 
-Para esto, necesitamos seguir los mismos pasos que para el paso anterior, disponer de 4GB libres en cada disco, darle click derecho a esa parte y darle a volumen reflejado.
+Para esto, necesitamos seguir los mismos pasos que para el paso anterior, disponer de unos 4GB libres en cada disco, darle click derecho a esa parte y darle a volumen reflejado.
 
 Quedaría así:
 
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/7ed6f583-6740-46c8-bc16-6494bfb42289)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/da7da0cd-97da-4685-95ad-c3aa505dd38a)
+
 
 
 
 Este sería el resultado:
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/4f4c6001-a2d8-4e73-bc94-6633b5a35cdf)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/b8270fed-69d8-4cec-bc3f-7342dfa34285)
+
 
 
 
