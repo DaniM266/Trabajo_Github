@@ -117,14 +117,14 @@ C:\Users\grupo4\Documents:
 
 En nuestro caso usaremos el formato VHD, ya que nos permitirá simular un disco duro en la virtual vox.
 
-2. El siguiente sería escoger el tamaño del disco, en este caso añadiremos uno de 10 GB
+2.En eeste paso, crearemos un disco de 10Gb ya que creemos que es un tamaño bastante adecuadno para lo que vamos a hacer, una vez creado hay que añadirlo a la máquina pulsando en la opción "añadir".
 
-![image](https://github.com/DaniM266/Trabajo_Github/assets/167864718/7475836f-fccc-40dd-a760-349b00ec2b7d)
+![image](https://github.com/DaniM266/Trabajo_Github/assets/73694734/eea0cf0d-cab7-40a6-ae12-c52248b132de)
 
 
-3. A continuación. Ya en nuestra máquina virtual, ponemos en línea nuestro nuevo disco virtual, dándole clic derecho sobre el mismo y clicando donde pone "en línea".
+3. Seguidamente, tenemos que abrir la maquina, entrar en el gestor de discos y poner nuestro disco en linea.
 
-4. Para crear un volumen simple, le damos clic derecho sobre nuestro disco sin formato, le damos un formato (NTFS, FAT32, FAT, ReFS) y un nombre para el volumen.
+4. Una vez realizado el paso anterior, le queremos dar formato al disco, para ello, le daremos clic derecho al disco, seleccionamos el formato que deseemos, en nuestro caso ntfs y le damos un nombre al dsico.
 
 
 ### Creación de un volumen distribuido.
